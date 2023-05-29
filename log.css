@@ -1,0 +1,53 @@
+body{
+    background-image: url('image/3.png');
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: rgb(63, 61, 61);
+    background-position-x: right;
+    background-size: 140%;
+    padding-left: 3%;
+  }
+  h3{
+    font-size:35px;
+  }
+  .login{
+    border-radius:15px;
+    width:400px;
+    height:600px;
+    padding:20px;
+    background-color:rgb(211, 247, 248 ,0.2);
+    
+  }
+  .login a{
+    color:rgb(188, 220, 247);
+  }
+  
+  .d0 input{
+    width:87%;
+    padding:8px ;
+    font-size:15px;
+    border-radius:5px;
+    color:black;
+    border-color: white;
+  }
+  
+  .d input{
+    width:95%;
+    padding:8px ;
+    font-size:15px;
+    border-radius:5px;
+    color:black;
+    border-color: white;
+  }
+  .d p{
+      display: flex;
+  }
+  .submit{
+    width:70%;
+    font-size:16px;
+    border-radius:13px;
+    padding: 8px;
+    background-color:rgb(156, 193, 223, 0.8);
+    border-color:#8f95ee;
+    text-align: center;
+  }

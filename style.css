@@ -1,0 +1,319 @@
+:root {
+    --main--color: #2196f3;
+  }
+  
+  body{
+      margin: 0px;
+      font-family: sans-serif;
+    }
+    .reaload {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.8);
+    }
+    /* Start Setting Box */
+  .Setting-box {
+    position: fixed;
+    left: -200px;
+    top: 0;
+    background-color: #fff;
+    width: 200px;
+    z-index: 1000;
+    height: 100vh;
+    transition: .3s;
+    border: 1px solid fff;
+    }
+    .Setting-box.Open {
+        left: 0;
+    }
+    .Setting-box .toggle-settings {
+    position: absolute;
+    right: -30px;
+    top: 100px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 0;
+    }
+    
+    .Setting-box .toggle-settings .fa-cog {
+      
+        padding: 4px 0;
+        width: 30px;
+    }
+    .Setting-box .Option-box {
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+    margin: 10px;
+    }
+    .Setting-box .Option-box h4 {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    }
+    .Setting-box .Option-box .colors-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0 0;
+    }
+    .Setting-box .Option-box .colors-list li {
+    width: 24px;
+    height: 24px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display:inline-block;
+    border: 3px solid #eee;
+    }
+    .Setting-box .Option-box .colors-list li.active {
+       border-color: #fff;
+        
+    }
+    .Setting-box .Option-box .colors-list li:first-child {
+        background-color: #d69c1f;
+    }
+    .Setting-box .Option-box .colors-list li:nth-child(2) {
+        background-color:#e91e63;
+    }
+    .Setting-box .Option-box .colors-list li:nth-child(3) {
+        background-color:#009688;
+    }
+  
+    .Setting-box .Option-box .colors-list li:nth-child(4) {
+        background-color: #03A9f4;
+    }
+    .Setting-box .Option-box .colors-list li:nth-child(5) {
+        background-color:#4caf50;
+    }
+    .Setting-box .Option-box .colors-list li:nth-child(6) {
+      background-color:#171717;
+  }
+    .loader {
+      display: flex;
+      position: relative;
+      left: 35%;
+      top: 35%;
+      width: 40%;
+      height: 40%;
+      z-index: 105;
+    }
+    .backBut {
+      display: none; /* يخفي الزر بشكل افتراضي */
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      font-size: 18px;
+      background-color: var(--main--color);
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+    }
+    
+    .backBut:hover {
+      background-color: var(--main--color);
+    }
+    
+    
+    header {
+        display:flex;
+        padding:10px;
+        justify-content: space-between;
+        padding-top: 2%;
+        
+    }
+    header .bto {
+      padding: 8px 18px 10px;
+      border-radius: 20px;
+      color: #FFF;
+      background-color: var(--main--color);
+      border-color: var(--main--color);
+    }
+    header a , ul{
+      color :gray;
+      display: flex;
+      text-decoration: none;
+      padding:10px;
+      list-style: none;
+      padding-right: 50px;
+       
+    }
+    
+    header .fa-solid{
+      color:gray;
+      font-size: 45px;
+      padding-left: 50px;
+      padding-top: 17px;
+    }
+    .Body0{
+      background-image: url('image/01.jpg');
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-size: 65%;
+      position: relative;
+    }
+  
+    
+    .Body0 .container {
+        align-items: center;
+        padding-bottom: 330px;
+        margin: 45px;
+       padding-top: 6%;
+    }
+  
+  
+    .Body0 .text h1  {
+        font-size: 40px;
+        margin: 0;
+        color: var(--main--color);
+        
+    }
+    .Body0 .text h2  {
+        font-size: 35px;
+        line-height: 1.7;
+        margin: 5px ;
+    
+    }
+    
+    .Body0 .text p {
+        font-size: 20px;
+        margin: 5px ;
+        color: #666;
+    
+    }
+    
+    .button .bto {
+        display: inline-flex;
+        padding: 8px 18px;
+        border: 1px solid;
+        margin-bottom:30px;
+        border-radius: 20px;
+    }
+     .home .button{
+        padding-left: 23%;
+        padding-bottom: 5%;
+    
+    }
+    .button .inline{
+      font-weight: 900px;
+      font-size: 40px;
+    
+    }
+    
+    .button .inl{
+      color:  var(--main--color);
+      padding-left: 530px;
+      font-size: 20px;
+    
+    }
+    .button a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--main--color);
+    
+      }
+    .button .bto:hover {
+        color: #FFF;
+        background-color:var(--main--color);
+        border-color:var(--main--color);
+      }
+    
+    
+    .title {
+    
+        margin: 0 auto 80px;
+        border: 1px solid var(--main--color);
+        padding: 10px 20px;
+        width: max-content;
+        display:flex;
+      }
+      .title p.blue{
+        color:var(--main--color);
+        font-size: 25px;
+    
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 200fr));
+        width: 1000px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 15%;
+    }
+    .home{
+      padding-top: 3%;
+      background-color: #dadbe22e;
+      padding-bottom: 5%;
+    
+    }
+    .home .box {
+        border-radius:10px ;
+        width: 98%;
+        margin: 20px;
+        background-color: white;
+        padding-bottom: 140px;
+        overflow: hidden;
+        transition: transform 0.3s , box-shadow 0.3s;
+      }
+      .home .box:hover{
+        transform: translateY(-10px);
+         box-shadow: 10px 10px 19px gray;
+        
+      }
+    .home .box img {
+      width: 100%;
+      height: 60%;
+    }
+    .home .box .content {
+        padding: 20px;
+    }
+    .home .box button{
+      width: 40%;
+      height: 28px;
+      color: black;
+      background-color: rgb(235 , 201 , 116);
+      border-color:  rgb(235 , 201 , 116);
+      border-radius: 4px;
+    
+    }
+    .home .box .fas{
+      color:var(--main--color);
+    
+    }
+    .home .box .star{
+      padding-left: 5%;
+    }
+    .home .box .star .red{
+      color: var(--main--color);
+      font-weight:bolder ;
+    }
+    .home .box .star .gray{
+      color:gray;
+    }
+    .home .box .prices{
+      font-weight: bolder;
+      font-size: 20px;
+      padding-left: 8%;
+      padding-top: 20px;;
+    }
+    
+    .home .box .best{
+      padding-left: 8%;
+    }
+    .home .box .youtube i{
+  
+    color: var(--main--color);
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+    padding-left: 40px;
+    }
